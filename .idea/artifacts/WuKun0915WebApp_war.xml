@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="WuKun0915WebApp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>WuKun0915WebApp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="WuKun0915WebApp-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="WuKun0915WebApp:war exploded" />
+    </root>
+  </artifact>
+</component>
