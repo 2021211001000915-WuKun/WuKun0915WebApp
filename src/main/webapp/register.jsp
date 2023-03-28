@@ -1,23 +1,20 @@
-
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>JSP -Wu Kun</title>
-</head>
-<body>
-<h1><%= "Code Exercise2" %>
-</h1>
-<br/>
-New User Registration!<br/>
-<form method="post" action="Register"><!-- which method? GET  ,Why? default is get--->
-    Username:<input type="text" name="username"/><br/>
-    password:<input type="password" name="password"/><br/>
-    Email:<input type="email" name="email"/><br/>
-    Gender<input type="radio" name="gender">Male <input type="radio" name="gender">Female<br>
-    Date of Birth:<input type="text " name="birthDate" placeholder="Date of Birth"><br/>
-    <input type="submit" value="Register"/>
-
+<%@include file="/header.jsp"%>
+This is my JSP page.<br>
+<h1>New User Registration</h1>
+<form method="post" action="/2021211001000915WuKun_war_exploded/register">
+    <table>
+        <tr> <td>Username:</td> <td><input type="text" name="Username" required><br/></td></tr>
+        <tr> <td>password:</td> <td><input type="password" name="password" required minlength="8"><br/></td></tr>
+        <tr> <td>Email:</td> <td><input type="email" name="Email" required><br/></td></tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="Gender" value="Male" checked="checked"/> Male <!-- checked="checked"默认选择项 -->
+                <input type="radio" name="Gender" value="Female"/> Female
+            </td>
+        </tr>
+        <tr> <td>Date of Birth:</td> <td><input type="date" name="Date" required dataformatas="yyyy-dd-mm"><br/></td></tr>
+        <tr> <td></td><td><input type="submit" value="Register"/></td>  </tr>
+    </table>
 </form>
-</body>
-</html>
+<%@include file="/footer.jsp"%>

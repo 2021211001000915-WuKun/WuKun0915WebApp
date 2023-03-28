@@ -6,18 +6,28 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Code Exercise2" %>
+<h1><%= "Hello World!!!" %>
 </h1>
 <br/>
-<a href="New User Registration!">New User Registration!</a> <br/>
-<from method="post"><!-- which method? GET  ,Why? default is get--->
-    Username:<input type="text" name="username"/><br/>
-    password:<input type="password" name="password"/><br/>
-    Email:<input type="email" name="Email"/><br/>
-    Gender<input type="radio" name="sex" value="Male"/>male
-    <input type="radio" name="sex" value="Female"/>female
-    <input type="date" class="form-control" name="student.stu_bir" pattern="yyyy-MM-dd" />">
-    <input type="submit" value="Register"/>
-</from>
+<a href="hello-servlet">Hello Servlet</a>
 </body>
 </html>
+<%@include file="header.jsp"%>
+<h1>Welcome to my home page</h1>
+<br/>
+<a href="hello-servlet">Hello Servlet-week1</a>
+<br/>
+<a href="hello">Student Info Servlet-week2</a>
+<br/>
+<a href="life">Life Cycle Servlet-week3</a>
+<br/>
+<a href="register.jsp">Register-getParameter-week3</a>
+<br/>
+<a href="config">Config parameter-week4</a>
+<br/>
+<a href="register.jsp">Register JDBC -week4</a>
+<br/>
+<a href="index.jsp">include-week5</a>
+<br/>
+<a href="login.jsp">Login-week5</a>
+<%@include file="footer.jsp"%>
